@@ -31,7 +31,7 @@ export default function App({ palette, addPalette, changeTheme, toggleView }) {
 
   useEffect(() => {
     changeTheme(null, colors);
-  }, []);
+  }, [changeTheme,colors]);
 
   return (
     <div className="MainCard card">
