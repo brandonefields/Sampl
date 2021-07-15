@@ -14,8 +14,9 @@ const palettesUrl = "http://localhost:3000/palettes/";
 
 export default function App() {
   const [palettes, setPalettes] = useState([]);
-  const [mainPalette, setMainPalette] = useState(null);
-  const [theme, setTheme] = useState(newPalette.colors);
+  const [mainPalette, setMainPalette] = useState(null); 
+  // const [theme, setTheme] = useState(null);
+
   
   
 
@@ -62,10 +63,10 @@ export default function App() {
     if (event) {
       event.stopPropagation();
     }
-    setTheme(colors);
-    colors.forEach((color, i) => {
-      document.documentElement.style.setProperty(`--color${i + 1}`, color);
-    });
+    // setTheme(colors);
+    // colors.forEach((color, i) => {
+    //   document.documentElement.style.setProperty(`--color${i + 1}`, color);
+    // });
   };
 
   const removePalette = (event, id) => {
