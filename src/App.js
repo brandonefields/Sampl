@@ -15,6 +15,7 @@ const palettesUrl = "http://localhost:3000/palettes/";
 export default function App() {
   const [palettes, setPalettes] = useState([]);
   const [mainPalette, setMainPalette] = useState(null);
+  const [theme, setTheme] = useState(newPalette.colors);
   
   
 
